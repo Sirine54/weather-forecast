@@ -5,6 +5,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 
+
 body{
     /* background:linear-gradient(rgba(0, 0, 1, 0.426),rgba(0, 0, 1, 0.415)),url('https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&w=1000&q=80'); */
     background-size: cover;
@@ -98,21 +99,61 @@ input:hover{
 }
 /* Loading part*/
 
-/* .weather-card.loading{
+ .weather-card.loading{
     visibility: hidden;
     position: relative;
     max-height:20px ;
 }
-.weather-card.loading:after{
-    content: 'Loading...';
+
+/* .weather-card.loading:after{             ////////////////An extra style for loading page using font awesome icon
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f1ce";
+    visibility: visible;
+    color:inherit;
+    position: absolute;
+    top:25px;
+    left:0;
+    right: 0;
+    animation: spinner .8s infinite ;
+} 
+
+
+
+@keyframes spinner {
+   from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+*/
+.weather-card.loading::before{
+    content: 'loading';
     visibility: visible;
     color:inherit;
     position: absolute;
     top:0;
     left:0;
     right: 0;
-} */
+    animation: dot .8s infinite ;
+}
 
-.loading{
-    visibility: hidden;
+@keyframes dot {
+
+    0%{
+        content: 'loading';
+    }
+    50%{
+        content: 'loading .';
+
+    }
+    70%{
+        content: 'loading ..';
+    }
+    100%{
+        content:'loading ...' ;
+    }
+    
 }
