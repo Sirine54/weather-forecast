@@ -97,6 +97,21 @@ input:hover{
     text-shadow: 1px 1px 10px black;
    
 }
+
+
+#date{
+   
+    position: absolute;
+    right: 0;
+    top:62%;
+    bottom:10%;
+    max-height: 150px;
+    padding: 12px;
+    font: inherit;
+    text-shadow: 1px 1px 10px black;
+   
+    
+}
 /* Loading part*/
 
  .weather-card.loading{
