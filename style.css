@@ -7,7 +7,7 @@
 
 
 body{
-    /* background:linear-gradient(rgba(0, 0, 1, 0.426),rgba(0, 0, 1, 0.415)),url('https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&w=1000&q=80'); */
+    background:linear-gradient(rgba(0, 0, 1, 0.426),rgba(0, 0, 1, 0.415)),url('https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&w=1000&q=80'); 
     background-size: cover;
      text-align: center;
      display: flex;
@@ -89,6 +89,10 @@ input:hover{
     margin: 5px;
     font: 700 1.5em 'Ubuntu', sans-serif ;
     color: rgb(238, 230, 225);
+}
+.temp{
+    font-size: 2em;
+    font-weight: 700;
 }
 .description,.humidity,.wind{
     margin: .8em;
