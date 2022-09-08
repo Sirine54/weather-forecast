@@ -6,4 +6,4 @@
 
 # with geolocation:
 
-### https://delicate-kleicha-07664d.netlify.app/
+### https://weather-searching.netlify.app/

@@ -5,7 +5,7 @@ let weather = {
        city+'&appid=3d5ad915bd588ead9ffe6f7eee2cbc9c')
      
         .then((response)=> response.json())
-        
+      
         .then((data)=>
             this.displayWeather(data)
        )
@@ -73,7 +73,8 @@ let geocode ={
     if (request.status === 200){
       // Success!
       var data = JSON.parse(request.responseText);
-      //console.log(data.results[0].components.country)
+      // console.log(data.results[0].components.country)
+      // console.log(data.results[0])
         weather.fetchWeather(data.results[0].components.country)
 
     } else if (request.status <= 500){
